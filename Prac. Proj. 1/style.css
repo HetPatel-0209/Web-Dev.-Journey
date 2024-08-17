@@ -1,73 +1,206 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Gilroy;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-.main{
+.main {
     height: 100%;
     width: 100%;
     display: grid;
     padding: 1%;
-    background-color: #d4d6de;
+    background-color: #000;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 30% 55% 15% ;
+    grid-template-rows: 25% 55% 20%;
 }
 
 
-.left_content{
+.left_content {
     background-color: #d4d6de;
-    width: 100%;
-    height: 100%;
     border-radius: 10px 0px 0px 0px;
 }
 
-.right_content{
-    background-color: crimson;
-    width: 100%;
-    height: 100%;
+.right_content {
+    background-color: #d4d6de;
     grid-column: 2;
     grid-row: 1;
+    justify-self: right;
+    align-self: end;
+    padding: 30px;
+    text-align: right;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
-.middle{
-    width: 100%;
-    height: 100%;
+h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.right_content .menu {
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.right_content h3{
+    display: none;
+}
+
+.middle {
     grid-column: 1/3;
-    background-color: aqua;
+    background-color: #d4d6de;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: helvetica;
+    text-transform: uppercase;
+    padding: 40px 60px 0px 100px;
+    line-height: 4.5vw;
+    font-weight: 100;
 }
 
-.right{
-    width: 100%;
-    height: 100%;
+.middle h1:nth-child(2n){
+    text-align: center;
+    padding-left: 40px;
+}
+
+.right {
     grid-row: 1/4;
     grid-column: 3;
     background-color: yellow;
     border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
 }
 
-.bottom{
+.right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:top;
+}
+
+.bottom {
     width: 100%;
     height: 100%;
-    background-color: greenyellow;
+    margin: 0px 20px 20px 0px;
+    background-color: #d4d6de;
     grid-column: 1/3;
     border-radius: 0px 2px 0px 10px;
+    padding: 40px 60px 0px 60px;
+    text-align: left;
 }
 
-.squre{
+.squre {
     width: 20px;
     height: 20px;
     rotate: 45deg;
-    margin: 25px;
+    margin: 30px;
     background-color: black;
+}
+
+.arrow{
+    background-color: #c83438;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+    color: white;
+}
+
+.arrow i{
+    font-size: 30px;
+    font-weight: 100;
 }
 
 @font-face {
     font-family: Gilroy;
     src: url(fonts/Gilroy.ttf);
+}
+
+@media (max-width: 600px) {
+    .main {
+        background-color: #d4d6de;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60px 30% 10%;
+    }
+    .right {
+        grid-row: 4;
+        grid-column: 1/3;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .left_content {
+        background-color: #d4d6de;
+    }
+
+    .right_content h4{
+        display: none;
+    }
+    
+    .right_content h3{
+        display: initial;
+        font-size: 30px;
+        position: absolute;
+        top: 1%;
+    }
+
+    .middle {
+        font-size: 5vw;
+        padding: 0px 60px;
+        line-height: 12vw;
+    }
+    
+    .middle h1:nth-child(2n){
+        text-align: center;
+        padding-left: 40px;
+    }
+    
+    .right video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position:top;
+    }
+    
+    .squre {
+        width: 10px;
+        height: 10px;
+        rotate: 45deg;
+        margin: 20px;
+        background-color: black;
+    }
+    
+    .arrow{
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    
+    .arrow i{
+        font-size: 15px;
+    }
+    .bottom{
+        width: 100%;
+        height: 100%;
+        margin: 0px 20px 20px 0px;
+        background-color: #d4d6de;
+        grid-column: 1/3;
+        border-radius: 0px;
+        padding: 2px 30px;
+        text-align: left;
+        font-size: 3vw;
+    }
 }
