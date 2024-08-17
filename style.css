@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Gilroy;
 }
 html,body{
     height: 100%;
@@ -10,7 +11,16 @@ html,body{
 .activity{
     height: 50%;
     width: 50%;
-    background-color: red;
-    top: 50%;
-    bottom: 50%;
+    background: linear-gradient(to right,red, orange);
+    top: 25%;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+    position: absolute;
+    color: #fff;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy.ttf);
 }
