@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 1%;
+    background-color: #d4d6de;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 55% 15% ;
+}
+
+
+.left_content{
+    background-color: #d4d6de;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.right_content{
+    background-color: crimson;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.middle{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    background-color: aqua;
+}
+
+.right{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/4;
+    grid-column: 3;
+    background-color: yellow;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.bottom{
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    grid-column: 1/3;
+    border-radius: 0px 2px 0px 10px;
+}
+
+.squre{
+    width: 20px;
+    height: 20px;
+    rotate: 45deg;
+    margin: 25px;
+    background-color: black;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy.ttf);
+}
