@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: work sans;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #fffeff;
+    display: flex;
+    align-items: flex-end;
+    padding: 0vw 4.688vw;
+    padding-top: 8.854vw;
+    gap: 3.125vw;
+}
+
+.left {
+    height: 100%;
+    width: 48%;
+    background-color: #fffeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left h1 {
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 7.6w;
+    padding-bottom: 2.604vw;
+}
+
+.bottom-content {
+    height: 35%;
+    width: 100%;
+    background-color: #fffeff;
+}
+
+.color {
+    display: flex;
+    border: 1px solid #706759;
+    padding: 0.3vw;
+    border-radius: 1.042vw;
+    align-items: center;
+    width: fit-content;
+}
+
+.color1 {
+    border-radius: 50%;
+    background-color: #706759;
+    width: 0.781vw;
+    height: 0.781vw;
+    margin-right: 0.26vw;
+}
+
+.color2 {
+    border-radius: 50%;
+    background-color: #333133;
+    width: 0.781vw;
+    height: 0.781vw;
+}
+
+.color h5 {
+    font-weight: 500;
+    margin-right: 0.781vw;
+}
+
+.content {
+    margin-top: 2.083vw;
+}
+
+.content h3 {
+    margin-bottom: 1.0vw;
+    font-size: 1.563vw;
+}
+
+.right {
+    height: 90%;
+    width: 35%;
+    background-color: #fffeff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.caption {
+    transform: rotate(270deg);
+    height: 5%;
+    bottom: 0;
+    position: absolute;
+    top: 72%;
+    left: -30%;
+    color: black;
+}
+
+.caption h2 {
+    font-size: 1.823vw;
+    font-weight: 500;
+}
+
+.right-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    color: black;
+}
+
+.right-top h4 {
+    font-size: 1.302vw;
+    font-weight: 600;
+}
+
+.right-top h5 i {
+    color: gold;
+    font-size: 1.146vw;
+    font-weight: 500;
+}
+
+.right-top h5 {
+    font-size: 1.146vw;
+    font-weight: 500;
+    padding-right: 1.042vw;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    background-color: #fffeff;
+    background-image: url("https://images.pexels.com/photos/2566931/pexels-photo-2566931.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: 20% 70%;
+    background-size: cover;
+}
+
+.black-spot {
+    width: 10.417vw;
+    height: 10.417vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 88%;
+    background-color: #232123;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.black-spot h4 {
+    font-weight: 500;
+    font-size: 1.563vw;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy.ttf);
+}
+
+@font-face {
+    font-family: work sans;
+    src: url(fonts/WorkSans-VariableFont_wght.ttf);
+}
