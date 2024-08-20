@@ -12,11 +12,14 @@ html, body {
 .main{
     width: 100%;
     height: 100%;
+    background-color: #efeef0;
 }
 
 nav{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 15%;
 }
 
 .upper-nav{
@@ -24,7 +27,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #eeedef;
 }
 
 .upper-nav ul{
@@ -36,6 +38,8 @@ nav{
 
 .upper-nav ul li{
     padding: 1.042vw;
+    font-size: 1.042vw;
+    font-weight: 500;
 }
 
 .upper-nav .colors{
@@ -51,9 +55,14 @@ nav{
     border-radius: 50%;
 }
 
+span{
+    opacity: 70%;
+}
+
 .lower-nav{
     display: flex;
-    background-color: #eeedef;
+    width: 100%;
+    align-items: center;
 }
 
 .lower-nav ul{
@@ -62,8 +71,78 @@ nav{
 }
 
 .lower-nav ul li{
+    font-size: 1.042vw;
     padding: 0vw 3.563vw 1vw 1.1vw;
+    font-weight: 500;
 }
+
+#alter{
+    opacity: 70%;
+    padding-left: 0.4vw;
+}
+
+.middle{
+    width: 100%;
+    height: 85%;
+}
+
+.text{
+    width: 100%;
+    height: 44%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    overflow-y: hidden;
+}
+
+.text::-webkit-scrollbar {
+    width: 1px;
+    height: 7px;
+}
+
+.text::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    width: 70%;
+    height: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1{
+    font-size: 6.25vw;
+    font-weight: 200;
+}
+
+.image{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 55%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.image img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image::-webkit-scrollbar {
+    width: 1px;
+    height: 7px;
+}
+
+.image::-webkit-scrollbar{
+    display: none;
+}
+
 
 @font-face {
     font-family: Gilroy;
