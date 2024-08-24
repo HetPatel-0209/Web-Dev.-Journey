@@ -2,8 +2,142 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Gilroy;
 }
 html, body {
     height: 100%;
     width: 100%;
+}
+
+.main{
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+.navbar{
+    display: grid;
+    margin-top: 1.5vw;
+    grid-template-columns: 35% 18% 27% 20%;
+    border: 3px solid #484648;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand{
+    border-right: 3px solid #484648;
+    width: 100%;
+    height: 100%;
+    padding: 0vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 3vw;
+    font-weight: bolder;
+    font-family: LOGO;
+    align-self: center;
+    letter-spacing: -3px;
+}
+
+.copy{
+    font-size: 1.5vw;
+    font-family: Gilroy;
+    font-weight: 200;
+}
+
+h4{
+    font-size: 1.5vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.gender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid #484648;
+    width: 100%;
+    height: 100%;
+}
+
+.facility{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid #484648;
+    width: 100%;
+    height: 100%;
+}
+
+.search{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.search i{
+    color: #484648;
+    font-size: 1.8vw;
+    padding-left: 4vw;
+}
+
+.searchString{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #484648;
+    opacity: 0;
+}
+
+.searchString:focus{
+    background: transparent;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.search i:hover .searchString{
+    opacity: 1;
+}
+
+h4:hover{
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-decoration: underline 1px #484648;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Black;
+    src: url(fonts/Gilroy-Black.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(fonts/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Xbold;
+    src: url(fonts/Gilroy-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: LOGO;
+    src: url(fonts/MonumentExtended-Ultrabold.otf);
 }
