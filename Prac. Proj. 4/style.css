@@ -98,6 +98,7 @@ span{
 .text::-webkit-scrollbar {
     width: 1px;
     height: 7px;
+    cursor: pointer;
 }
 
 .text::-webkit-scrollbar-thumb{
@@ -140,7 +141,7 @@ span{
 }
 
 .image::-webkit-scrollbar{
-    display: none;
+    cursor: pointer;
 }
 
 
