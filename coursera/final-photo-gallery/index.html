@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="image">
+            Interact with an image below to display here.
+        </div>
+
+        <div id="gallery">
+            <figure>
+                <img class="preview" alt="A serene lake surrounded by mountains" src="lake.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A colorful autumn forest" src="forest.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A sandy beach with crystal clear water" src="beach.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A snowy mountain peak" src="mountain.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A vibrant city skyline at night" src="city.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A field of blooming sunflowers" src="sunflowers.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
