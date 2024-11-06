@@ -1,5 +1,5 @@
 # Final Project for Web Design for Everybody Capstone from the Michigan University 
-# Developed By Ali Ahmed Tarmoush 
+# Developed By Het Patel
 # Features of the  portfolio :
 1. HTML5.
 2. CSS3.
