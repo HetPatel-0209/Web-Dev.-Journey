@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="image">
+            Interact with an image below to display here.
+        </div>
+
+        <div id="gallery">
+            <figure>
+                <img class="preview" alt="A serene lake surrounded by mountains" src="https://preview.redd.it/bjbundwu6zg11.jpg?auto=webp&s=642dbdbdb18bbc23c3569c6552c30f3a51ee9f6e" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A colorful autumn forest" src="https://th.bing.com/th/id/R.00f84fb61b42456ec61097ba0fe08f3a?rik=CP7H6c7%2bJjXTgg&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-9%2fLandscape-Forest-HD-Wallpaper-25726.jpg&ehk=ORnUdzHCVv%2bi9Vngxq95hYwlbciT2iGXNUx9%2bfalC8A%3d&risl=&pid=ImgRaw&r=0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A sandy beach with crystal clear water" src="https://images.pexels.com/photos/459252/pexels-photo-459252.jpeg?cs=srgb&dl=andaman-sea-beach-beautiful-459252.jpg&fm=jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A snowy mountain peak" src="https://th.bing.com/th/id/OIP.Nfd-_b2A1A1D6AsvReUmgAHaEc?rs=1&pid=ImgDetMain" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A vibrant city skyline at night" src="https://wallpaperaccess.com/full/1137443.jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+            <figure>
+                <img class="preview" alt="A field of blooming sunflowers" src="https://images.pexels.com/photos/1214259/pexels-photo-1214259.jpeg?cs=srgb&dl=photo-of-sunflower-1214259.jpg&fm=jpg" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+            </figure>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

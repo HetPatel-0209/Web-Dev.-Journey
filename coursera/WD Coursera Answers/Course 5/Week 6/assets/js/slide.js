@@ -1,0 +1,1 @@
+var slideIndex = 1; function plusSlides(e) { showSlides(slideIndex += e) } function showSlides(e) { var s = document.getElementsByClassName("carousel-item"); e > s.length && (slideIndex = 1), e < 1 && (slideIndex = s.length); for (var l = 0; l < s.length; l++)s[l].className = "carousel-item"; s[slideIndex - 1].className += " active" } showSlides(slideIndex);
